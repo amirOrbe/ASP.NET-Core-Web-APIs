@@ -1,0 +1,28 @@
+2023-04-12 18:03:03.170 -06:00 [INF] User profile is available. Using 'C:\Users\brian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-04-12 18:03:03.812 -06:00 [INF] Now listening on: https://localhost:7284
+2023-04-12 18:03:04.259 -06:00 [INF] Now listening on: http://localhost:5233
+2023-04-12 18:03:04.950 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-12 18:03:08.471 -06:00 [INF] Hosting environment: Development
+2023-04-12 18:03:08.492 -06:00 [INF] Content root path: C:\Users\brian\OneDrive\Documentos\NZWalks\NZWalks\NZWalks.API
+2023-04-12 18:03:08.820 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7284/swagger/index.html - -
+2023-04-12 18:03:11.687 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7284/swagger/index.html - - - 200 - text/html;charset=utf-8 2873.0685ms
+2023-04-12 18:03:11.846 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7284/_framework/aspnetcore-browser-refresh.js - -
+2023-04-12 18:03:11.847 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7284/_vs/browserLink - -
+2023-04-12 18:03:11.878 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7284/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 31.6747ms
+2023-04-12 18:03:12.142 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7284/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 295.1391ms
+2023-04-12 18:03:12.424 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7284/swagger/v1/swagger.json - -
+2023-04-12 18:03:12.952 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7284/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 527.0103ms
+2023-04-12 18:03:21.889 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7284/api/Regions - -
+2023-04-12 18:03:22.029 -06:00 [INF] Executing endpoint 'NZWalks.API.Controllers.RegionsController.GetAll (NZWalks.API)'
+2023-04-12 18:03:22.083 -06:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller NZWalks.API.Controllers.RegionsController (NZWalks.API).
+2023-04-12 18:03:22.591 -06:00 [INF] GetAll action method was invoked
+2023-04-12 18:03:22.592 -06:00 [WRN] This is a warning log
+2023-04-12 18:03:22.593 -06:00 [ERR] This is a error log
+2023-04-12 18:03:25.392 -06:00 [INF] Executed DbCommand (150ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM [Regions] AS [r]
+2023-04-12 18:03:25.623 -06:00 [INF] Finished GetAll request with data: [{"Id":"906cb139-415a-4bbb-a174-1a1faf9fb1f6","Code":"NSN","Name":"Nelson","RegionImageUrl":"https://images.pexels.com/photos/13918194/pexels-photo-13918194.jpeg?auto=compress\u0026cs=tinysrgb\u0026w=1260\u0026h=750\u0026dpr=1"},{"Id":"f7248fc3-2585-4efb-8d1d-1c555f4087f6","Code":"AKL","Name":"Auckland","RegionImageUrl":"https://images.pexels.com/photos/5169056/pexels-photo-5169056.jpeg?auto=compress\u0026cs=tinysrgb\u0026w=1260\u0026h=750\u0026dpr=1"},{"Id":"14ceba71-4b51-4777-9b17-46602cf66153","Code":"BOP","Name":"Bay Of Plenty","RegionImageUrl":null},{"Id":"6884f7d7-ad1f-4101-8df3-7a6fa7387d81","Code":"NTL","Name":"Northland","RegionImageUrl":null},{"Id":"f077a22e-4248-4bf6-b564-c7cf4e250263","Code":"STL","Name":"Southland","RegionImageUrl":null},{"Id":"cfa06ed2-bf65-4b65-93ed-c9d286ddb0de","Code":"WGN","Name":"Wellington","RegionImageUrl":"https://images.pexels.com/photos/4350631/pexels-photo-4350631.jpeg?auto=compress\u0026cs=tinysrgb\u0026w=1260\u0026h=750\u0026dpr=1"}]
+2023-04-12 18:03:25.693 -06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTO.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-04-12 18:03:25.724 -06:00 [INF] Executed action NZWalks.API.Controllers.RegionsController.GetAll (NZWalks.API) in 3620.3836ms
+2023-04-12 18:03:25.737 -06:00 [INF] Executed endpoint 'NZWalks.API.Controllers.RegionsController.GetAll (NZWalks.API)'
+2023-04-12 18:03:25.758 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7284/api/Regions - - - 200 - application/json;+charset=utf-8 3868.3368ms
